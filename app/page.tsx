@@ -17,7 +17,6 @@ async function getPosts(){
 
 export default async function Home() {
   const posts = await getPosts();
-  console.log("post",posts)
   return (
     <main className={styles.main}>
       <Link href={'/add-post'}>Add Post</Link>

@@ -7,6 +7,7 @@ interface DeletePostButtonProps {
 
 export default function DeletePostButton({ postId }: DeletePostButtonProps) {
     const router = useRouter();
+    console.log("postId",postId)
 
     async function handleClick() {
         try {
